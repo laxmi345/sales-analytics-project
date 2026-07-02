@@ -1,0 +1,13 @@
+sales_analytics:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: vlmzujs-iu61960
+      user: LAXMI1730
+      password: Laxmisnow@1730
+      role: ACCOUNTADMIN
+      database: SALES_DW
+      warehouse: COMPUTE_WH
+      schema: SALES
+      threads: 1

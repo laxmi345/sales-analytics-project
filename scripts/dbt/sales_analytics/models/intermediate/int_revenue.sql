@@ -1,0 +1,39 @@
+-- Intermediate model: Revenue calculations
+SELECT
+    ORDER_ID,
+    ORDER_DATE,
+    CUSTOMER_ID,
+    CUSTOMER_NAME,
+    SEGMENT,
+    REGION,
+    CITY,
+    STATE,
+    CATEGORY,
+    SUB_CATEGORY,
+    PRODUCT_NAME,
+    SALES,
+    YEAR,
+    MONTH,
+    MONTH_NAME,
+    QUARTER,
+    DAYS_TO_SHIP,
+
+    -- Calculated columns
+    SUM(SALES) OVER (
+        PARTITION BY YEAR, MONTH
+        ORDER BY ORDER_DATE
+    ) AS RUNNING_MONTHLY_REVENUE,
+
+    SUM(SALES) OVER (
+        PARTITION BY REGION
+    ) AS TOTAL_REGION_REVENUE,
+
+    SUM(SALES) OVER (
+        PARTITION BY CATEGORY
+    ) AS TOTAL_CATEGORY_REVENUE,
+
+    AVG(SALES) OVER (
+        PARTITION BY SEGMENT
+    ) AS AVG_SEGMENT_SALES
+
+FROM {{ ref('stg_sales') }}

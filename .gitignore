@@ -1,0 +1,15 @@
+# Secrets - NEVER commit
+.streamlit/secrets.toml
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Data files (optional - agar bada CSV hai)
+data/cleaned/
+
+# OS
+.DS_Store
+Thumbs.db

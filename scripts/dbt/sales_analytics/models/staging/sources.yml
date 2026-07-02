@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: sales
+    database: SALES_DW
+    schema: SALES
+    tables:
+      - name: RAW_SALES
+        description: "Raw sales data from Superstore dataset"
+        columns:
+          - name: ORDER_ID
+            tests:
+              - not_null
+          - name: SALES
+            tests:
+              - not_null
