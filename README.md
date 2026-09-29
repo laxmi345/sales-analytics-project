@@ -1,6 +1,6 @@
 ﻿# 📊 Sales Analytics Executive Dashboard
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://sales-analytics-projec-92mgrf4u3tq8qq4cdrdtkm.streamlit.app/)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://laxmi-sales-pulse.streamlit.app/)
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://www.python.org/)
 [![Plotly](https://img.shields.io/badge/Visualization-Plotly%20Express-orange.svg)](https://plotly.com/python/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
@@ -61,7 +61,7 @@ An interactive, production-ready **Executive Sales Analytics Dashboard** designe
 
 ## 🌐 Live Interactive Dashboard
 
-👉 **Live Demo:** [sales-analytics-projec-92mgrf4u3tq8qq4cdrdtkm.streamlit.app](https://sales-analytics-projec-92mgrf4u3tq8qq4cdrdtkm.streamlit.app/)
+👉 **Live Demo:** [laxmi-sales-pulse.streamlit.app](https://laxmi-sales-pulse.streamlit.app/)
 
 ## 🌐 Deploy to Streamlit Community Cloud (Free)
 
